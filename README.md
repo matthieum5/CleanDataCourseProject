@@ -44,7 +44,7 @@ colnames(trainData) <- varnames
 
 train <- cbind(trainSubject, trainLabels, trainData)
 
-## Read test data sets
+## Read test datasets
 testSubject <- read.csv("./data//UCI HAR Dataset/test/subject_test.txt", 
                         sep = "", 
                         header = FALSE, 
