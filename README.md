@@ -1,6 +1,6 @@
 # Clean Data Course Project
 
-The script run_analysis.R downloads and reads data txt files from the Human Activity Recognition dataset. Subject, Activity, and Measurement data are read in and then combined into single dataframes for both the training and test populations.The training and test dataframes are then combined into a single dataframe "allData"
+The script run_analysis.R downloads and reads data txt files from the Human Activity Recognition dataset. Subject, Activity, and Measurement data are read in and then combined into single dataframes for both the training and test populations.The training and test dataframes are then combined into a single dataframe "allData", subset to a dataframe "exData" containing only mean and std values, and then melted and recast to dataframe "meanData" to summarize mean values by subject and by activity.
 
 ## Create data directory and download data
 if(!file.exists("./data")){dir.create("./data")}
@@ -87,8 +87,7 @@ exData$Activity <- revalue(exData$Activity, c("1" = "Walking",
                                               "6" = "Laying"))
 
 
-## Reshape dataset to tall and skinny form, and recast to summarize 
-## mean measurement values
+## Reshape dataset to tall and skinny form, and recast to summarize mean measurement values
 exnames <- colnames(exData[3:68])
 
 meltData <- melt(exData, id = c("Subject", "Activity"), measure.vars = exnames)
