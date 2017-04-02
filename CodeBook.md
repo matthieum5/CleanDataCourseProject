@@ -12,7 +12,9 @@ features.txt,
 activity_labels.txt
 
 Subject files contain numeric designation of human subjects (1-30)
+
 X files contain acclerometer measurement values (561 measurement variables), listed in file features.txt
+
 Y files contain human activity designations 1-6, listed in file activity_labels.txt
 
 Subject, Activity, and Measurements are combined into single dataframe for each subject population (i.e. "trainData" and "testData").
@@ -21,7 +23,7 @@ Training and Test data frames are combined into single data frame "allData".
 
 "allData" is subset to mean and std measurements only in "exData" data frame (66 measurement variables), and sorted in descending order by Subject designation.
 
-"exData" is melted and recast in data frame "meanData" summarizing mean values of measurement for each activity by each subject.
+"exData" is melted and recast in data frame "meanData" summarizing the mean value of measurements for each activity by each subject.
 
 The final dataset "meanData" (dim 180 x 68) contains the following variables:
 ID Variables
