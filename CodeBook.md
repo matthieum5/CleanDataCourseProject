@@ -26,7 +26,9 @@ Training and Test data frames are combined into single data frame "allData".
 "exData" is melted and recast in data frame "meanData" summarizing the mean value of measurements for each activity by each subject.
 
 The final dataset "meanData" (dim 180 x 68) contains the following variables:
-ID Variables
+
+ID Variables:
+
 [[1]]
 [1] "Subject"
 
