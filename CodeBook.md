@@ -2,16 +2,16 @@ Getting and Cleaning Data Course Project
 
 Smartphone triaxial acceleration measurement data for training and test populations.
 Data sourced from the files:
-subject_train.txt
-y_train.txt
-X_train.txt
-subject_test.txt
-y_test.txt
-X_test.txt
-features.txt
+subject_train.txt,
+y_train.txt,
+X_train.txt,
+subject_test.txt,
+y_test.txt,
+X_test.txt,
+features.txt,
 activity_labels.txt
 
-Subject files contained numeric designation of human subject (1-30)
+Subject files contain numeric designation of human subjects (1-30)
 X files contain acclerometer measurement values (561 measurement variables), listed in file features.txt
 Y files contain human activity designations 1-6, listed in file activity_labels.txt
 
