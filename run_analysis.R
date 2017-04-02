@@ -88,3 +88,5 @@ names(meanData) <- sub("^t|^f","Mean",names(meanData))
 names(meanData) <- sub("Acc","Acceleration",names(meanData))
 names(meanData) <- sub("-mean\\()-|-mean\\()","",names(meanData))
 names(meanData) <- sub("-std\\()-|-std\\()","",names(meanData))
+
+write.table(meanData, file = "meanData.txt", row.names = FALSE)
